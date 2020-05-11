@@ -13,10 +13,10 @@ spec:
   template:
     metadata:
       labels:
-        app: podinfo
+        app: somepod
     spec:
       containers:
-      - name: podinfo
+      - name: somepod
         image: quay.io/stefanprodan/podinfo:3.0.0
         ports:
         - containerPort: 3000
