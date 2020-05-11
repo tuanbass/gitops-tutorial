@@ -10,8 +10,8 @@ metadata:
     app: somepod
 spec:
   replicas: 1
-  selector: 
-    matchLabels: 
+  selector:
+    matchLabels:
       app: somepod
   template:
     metadata:
@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: somepod
-        image: quay.io/stefanprodan/podinfo:3.0.0
+        image: quay.io/stefanprodan/podinfo:3.2.3
         ports:
         - containerPort: 3000
