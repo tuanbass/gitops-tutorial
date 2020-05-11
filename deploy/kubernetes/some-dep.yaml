@@ -3,6 +3,9 @@ apiVersion: apps/v1 # for versions before 1.6.0 use extensions/v1beta1
 kind: Deployment
 metadata:
   name: somepod
+  annotations:
+    flux.weave.works/tag.podinfo: glob:*
+    flux.weave.works/automated: 'true'
   labels:
     app: somepod
 spec:
